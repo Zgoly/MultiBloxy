@@ -6,6 +6,10 @@ MultiBloxy is a Windows application designed to manage and control multiple Robl
 ![Stars](https://img.shields.io/github/stars/Zgoly/MultiBloxy?color=%231e90ff)
 ![Forks](https://img.shields.io/github/forks/Zgoly/MultiBloxy?color=%231e90ff)
 
+<a href="https://dsc.gg/zgoly">
+  <img alt="Discord" src="https://invidget.switchblade.xyz/y8fBWPNJFm">
+</a>
+
 ## Key Features 🌟
 - **Single File Executable**: Easy to use with no installation required.
 - **System Tray Integration**: Runs in the background and provides quick access through a system tray icon.
@@ -17,7 +21,6 @@ MultiBloxy is a Windows application designed to manage and control multiple Robl
 - **Bloxstrap support**: Supports both Bloxstrap and the original bootstrapper.
 
 ## Getting Started 🚀
-
 1. **Download**: Download the `MultiBloxy.exe` from the [latest release](https://github.com/Zgoly/MultiBloxy/releases/latest).
 2. **Auto-Start**: To ensure MultiBloxy starts automatically with Windows, click <kbd>Win</kbd> + <kbd>R</kbd>, run the path `%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\StartUp`, and drop the `MultiBloxy.exe` file here.
 3. **Run**: Launch `MultiBloxy.exe`, and it will appear in your system tray.
@@ -27,7 +30,6 @@ MultiBloxy is a Windows application designed to manage and control multiple Robl
 Roblox uses a singleton mutex named `ROBLOX_singletonEvent` to ensure that only one instance of the game is running at a time. MultiBloxy creates this mutex before Roblox does, allowing you to run as many instances of Roblox as you want.
 
 ## Is This a Virus? 🛡️
-
 MultiBloxy is completely safe and not a virus. If you encounter a "Windows Protected Your PC" message, it appears because the application is unsigned, and obtaining a certificate can be costly. You can safely ignore it and run the program anyway. Here's how:
 
 1. **Click on "More info"** in the warning message.
@@ -36,15 +38,21 @@ MultiBloxy is completely safe and not a virus. If you encounter a "Windows Prote
 For those who are still skeptical, you can compile the program yourself using [Visual Studio Community](https://visualstudio.microsoft.com/vs/). Alternatively, you can decompile the current executable file to ensure that it is completely safe.
 
 ## Is This Bannable? 🚫
-
 MultiBloxy is not bannable as long as you do not break Roblox's rules. The tool is designed to help running multiple Roblox instances and does not interfere with the game's mechanics or provide any unfair advantages. Always ensure that your usage complies with Roblox's terms of service.
 
 ## Contributing 🤝
-
 Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please [open an issue](https://github.com/Zgoly/MultiBloxy/issues) or [submit a pull request](https://github.com/Zgoly/MultiBloxy/pulls).
 
-## License 📜
+If you want to contribute to localization, you can add new translations or improve existing ones. The localization code is located in the [Localization.cs](https://github.com/Zgoly/MultiBloxy/blob/main/MultiBloxy/Localization.cs) file. Feel free to add new languages or correct any mistakes.
 
+## Join Our Discord Server 💬
+For faster responses to your issues, problems, and other inquiries, join [our Discord server](https://dsc.gg/zgoly):
+
+<a href="https://dsc.gg/zgoly">
+  <img alt="Discord" src="https://invidget.switchblade.xyz/y8fBWPNJFm">
+</a>
+
+## License 📜
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
