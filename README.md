@@ -1,6 +1,8 @@
 # MultiBloxy 🎮🔓
 
-MultiBloxy is a Windows application designed to manage and control multiple Roblox instances. It provides a convenient way to open multiple instances for different accounts and offers a variety of options to manage them efficiently.
+<img align="right" width="400" src="https://raw.githubusercontent.com/Zgoly/hosts/main/multibloxy_banner.webp" title="Screenshot of MultiBloxy taken on Windows 11 + Rectify11" />
+
+MultiBloxy is a Windows system tray icon application designed to manage and control multiple Roblox instances. It provides a convenient way to open multiple instances for different accounts and offers a variety of options to manage them efficiently.
 
 ![Total Downloads](https://img.shields.io/github/downloads/Zgoly/MultiBloxy/total?color=%231e90ff)
 ![Stars](https://img.shields.io/github/stars/Zgoly/MultiBloxy?color=%231e90ff)
