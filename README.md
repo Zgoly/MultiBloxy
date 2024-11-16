@@ -39,7 +39,7 @@ cd <your/installation/directory>
 Ensure that you have the necessary .NET SDK and Framework installed. If they are missing, follow the installation instructions in the **Prerequisites** section.
 
 ### 3. Build the App
-To build the app, run the following command in the root directory of the project:
+To build the app, run the following command in the MultiBloxy directory of the project, where the .csproj and .cs files are located:
 
 ```bash
 dotnet build
