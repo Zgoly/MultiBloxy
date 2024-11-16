@@ -21,9 +21,9 @@ This fork includes enhancements, bug fixes, and optimizations for better perform
   ```powershell
   winget install Microsoft.DotNet.SDK.9
   ```
-- **.NET Framework 4.8.1 Developer Pack**  
+- **.NET Framework 4.8 Developer Pack**  
   Download from the official .NET website:  
-  [Download .NET Framework 4.8.1 Developer Pack](https://dotnet.microsoft.com/en-us/download/dotnet-framework/thank-you/net48-developer-pack-offline-installer)
+  [Download .NET Framework 4.8 Developer Pack](https://dotnet.microsoft.com/en-us/download/dotnet-framework/thank-you/net48-developer-pack-offline-installer)
 
 ## Building the App
 
@@ -74,7 +74,7 @@ This project is a **fork** of the original [MultiBloxy](https://github.com/Zgoly
 
 ## Troubleshooting
 
-- **Missing .NET SDK or Framework**: Ensure that both the .NET SDK 9 (or higher) and the .NET Framework 4.8.1 Developer Pack are installed.
+- **Missing .NET SDK or Framework**: Ensure that both the .NET SDK 9 (or higher) and the .NET Framework 4.8 Developer Pack are installed.
 - **Build Errors**: If you encounter build errors, verify that your environment meets all prerequisites. You may need to clean and rebuild the project using:
   ```bash
   dotnet clean
