@@ -60,7 +60,7 @@ Alternatively, navigate to the output directory (`bin\Debug` or `bin\Release`) a
 
 ```bash
 cd bin\Debug
-roblox-multilauncher.exe
+MultiBloxy.exe
 ```
 
 ### 2. Access the App via the System Tray
