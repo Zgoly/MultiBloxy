@@ -1,0 +1,15 @@
+**/bin/
+**/obj/
+.vs/
+.vscode/
+.idea/
+userconfig.txt
+Thumbs.db
+ehthumbs.db
+.DS_Store
+.idea/
+ScaffoldingReadMe.txt
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
