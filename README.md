@@ -1,62 +1,88 @@
-# MultiBloxy 🎮🔓
+# roblox-multilauncher
 
-<img align="right" width="300" src="https://raw.githubusercontent.com/Zgoly/hosts/main/multibloxy_banner.webp" title="Screenshot of MultiBloxy taken on Windows 11 + Rectify11" />
+## Disclaimer
 
-MultiBloxy is a Windows system tray icon application designed to manage and control multiple Roblox instances. It provides a convenient way to open multiple instances for different accounts and offers a variety of options to manage them efficiently.
+This project is a **fork** of the original [MultiBloxy](https://github.com/Zgoly/MultiBloxy). The code provided here is offered under the **MIT License** unless otherwise stated. By using this app, you agree to the terms of the license. For more information on the license and usage, refer to the [LICENSE](LICENSE) file in the repository.
 
-![Total Downloads](https://img.shields.io/github/downloads/Zgoly/MultiBloxy/total?color=%231e90ff)
-![Stars](https://img.shields.io/github/stars/Zgoly/MultiBloxy?color=%231e90ff)
-![Forks](https://img.shields.io/github/forks/Zgoly/MultiBloxy?color=%231e90ff)
+This fork includes enhancements, bug fixes, and optimizations for better performance and compatibility.
 
-<a href="https://dsc.gg/zgoly">
-  <img alt="Discord" src="https://invidget.switchblade.xyz/y8fBWPNJFm">
-</a>
+## Features
 
-## Key Features 🌟
-- **Single File Executable**: Easy to use with no installation required.
-- **System Tray Integration**: Runs in the background and provides quick access through a system tray icon.
-- **Localization Support**: Supports multiple languages for a better user experience.
-- **Advanced Mutex Control**: Allows you to pause and resume mutex with ease.
-- **Handling Roblox Already Opened**: Shows a dialog box with actions when Roblox is already opened. You can also choose to remember your action for future use.
-- **Low System Resources Usage**: Uses only about 3 MB of RAM and 0% CPU (when running on an average setup).
-- **Customizable Settings**: Allows you to configure couple of settings (config file is saved in the folder along with the .exe file).
-- **Bloxstrap support**: Supports both Bloxstrap and the original bootstrapper.
+- **Multi-Account Support**: Run multiple Roblox accounts simultaneously with ease.
+- **System Tray Integration**: Minimize the app to the system tray for quick access and background operation.
+- **Customization Options**: Easily adjust settings via the system tray menu (right-click on the icon).
+- **Lightweight**: Designed to run efficiently with minimal resource consumption.
 
-## Getting Started 🚀
-1. Download the `MultiBloxy.exe` from the [latest release](https://github.com/Zgoly/MultiBloxy/releases/latest).
-2. To ensure MultiBloxy starts automatically with Windows, click <kbd>Win</kbd> + <kbd>R</kbd>, run the path `%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\StartUp`, and drop the `MultiBloxy.exe` file here.
-3. Launch `MultiBloxy.exe`, and it will appear in your system tray.
-4. Right-click the system tray icon to access the context menu and manage your Roblox instances.
+## Prerequisites
 
-## How It Works ⚙️
-Roblox uses a singleton mutex named `ROBLOX_singletonEvent` to ensure that only one instance of the game is running at a time. MultiBloxy creates this mutex before Roblox does, allowing you to run as many instances of Roblox as you want.
+- **Windows 7 (SP1), 8.x (8, 8.1), 10, 11** (Tested on Windows 11)
+- **.NET SDK 9** (or higher)  
+  Install via the following command:
+  ```powershell
+  winget install Microsoft.DotNet.SDK.9
+  ```
+- **.NET Framework 4.8.1 Developer Pack**  
+  Download from the official .NET website:  
+  [Download .NET Framework 4.8.1 Developer Pack](https://dotnet.microsoft.com/en-us/download/dotnet-framework/thank-you/net48-developer-pack-offline-installer)
 
-## Is This a Virus? 🛡️
-MultiBloxy is completely safe and not a virus. If you encounter a "Windows Protected Your PC" message, it appears because the application is unsigned, and obtaining a certificate can be costly. You can safely ignore it and run the program anyway. Here's how:
+## Building the App
 
-1. **Click on "More info"** in the warning message.
-2. **Click on "Run anyway"** to proceed with running MultiBloxy.
+### 1. Clone the Repository
+Clone the repository to your local machine:
 
-For those who are still skeptical, you can compile the program yourself using [Visual Studio Community](https://visualstudio.microsoft.com/vs/). Alternatively, you can decompile the current executable file to ensure that it is completely safe.
+```bash
+git clone https://github.com/Xelvanta/roblox-multilauncher <your/installation/directory>
+cd <your/installation/directory>
+```
 
-## Is This Bannable? 🚫
-MultiBloxy is not bannable as long as you do not break Roblox's rules. The tool is designed to help running multiple Roblox instances and does not interfere with the game's mechanics or provide any unfair advantages. Always ensure that your usage complies with Roblox's terms of service.
+### 2. Install Dependencies
+Ensure that you have the necessary .NET SDK and Framework installed. If they are missing, follow the installation instructions in the **Prerequisites** section.
 
-## Contributing 🤝
-Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please [open an issue](https://github.com/Zgoly/MultiBloxy/issues) or [submit a pull request](https://github.com/Zgoly/MultiBloxy/pulls).
+### 3. Build the App
+To build the app, run the following command in the root directory of the project:
 
-If you want to contribute to localization, you can add new translations or improve existing ones. The localization code is located in the [Localization.cs](https://github.com/Zgoly/MultiBloxy/blob/main/MultiBloxy/Localization.cs) file. Feel free to add new languages or correct any mistakes.
+```bash
+dotnet build
+```
 
-## Join Our Discord Server 💬
-For faster responses to your issues, problems, and other inquiries, join [our Discord server](https://dsc.gg/zgoly):
+This will compile the application and place the output in the `bin\Debug` or `bin\Release` folder, depending on the build configuration.
 
-<a href="https://dsc.gg/zgoly">
-  <img alt="Discord" src="https://invidget.switchblade.xyz/y8fBWPNJFm">
-</a>
+## Running the App
 
-## License 📜
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+### 1. Run the App from the Command Line
+After building the app, run it using the following command:
+
+```bash
+dotnet run
+```
+
+Alternatively, navigate to the output directory (`bin\Debug` or `bin\Release`) and run the executable directly:
+
+```bash
+cd bin\Debug
+roblox-multilauncher.exe
+```
+
+### 2. Access the App via the System Tray
+Once the app is running, it will minimize to the **system tray**. You will find an icon for **roblox-multilauncher** there. 
+
+- **Right-click** on the icon to access the app's menu.
+
+## License
+
+This project is a **fork** of the original [MultiBloxy](https://github.com/Zgoly/MultiBloxy) and is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Troubleshooting
+
+- **Missing .NET SDK or Framework**: Ensure that both the .NET SDK 9 (or higher) and the .NET Framework 4.8.1 Developer Pack are installed.
+- **Build Errors**: If you encounter build errors, verify that your environment meets all prerequisites. You may need to clean and rebuild the project using:
+  ```bash
+  dotnet clean
+  dotnet build
+  ```
 
 ---
 
-Thank you for using MultiBloxy! 😊
+By **Xelvanta Group Systems**  
+For support or inquiries, please contact us at [enquiry.information@proton.me](mailto:enquiry.information@proton.me).  
+GitHub: [https://github.com/Xelvanta](https://github.com/Xelvanta)
