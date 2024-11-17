@@ -33,13 +33,7 @@ namespace MultiBloxy
                 { "ContextMenu.SettingsMenuItem.ResetRememberedMenuItem.ResetRemembered", "Reset Remembered Options" },
                 { "ContextMenu.ExitMenuItem.Exit", "Exit" },
                 { "Error.Mutex.Caption", "Failed to Create Mutex" },
-                { "Error.Mutex.Message", "An error occurred while creating the Mutex. This likely happened because when {0} was launched, Roblox was already running and had registered its handle. You can do the following:" },
-                { "Error.Mutex.Action.Fix", "Close the handle for all instances of Roblox" },
-                { "Error.Mutex.Action.Abort", "Stop all Roblox instances" },
-                { "Error.Mutex.Action.Retry", "Try again" },
-                { "Error.Mutex.Action.Ignore", "Ignore the error and continue" },
-                { "Error.Mutex.Action.Remember", "Remember this choice" },
-                { "Error.Mutex.Action.Confirm", "Confirm" },
+                { "Error.Mutex.Message", "An error occurred while creating the Mutex. This likely happened because when {0} was launched, Roblox was already running and had registered its handle. Try closing Roblox and try again." },
                 { "Error.Singleton.Caption", "Singleton Error" },
                 { "Error.Singleton.Message", "{0} is already running. Try looking in the system tray." }
             };
@@ -60,13 +54,7 @@ namespace MultiBloxy
                 { "ContextMenu.SettingsMenuItem.ResetRememberedMenuItem.ResetRemembered", "Сбросить запомненные параметры" },
                 { "ContextMenu.ExitMenuItem.Exit", "Выход" },
                 { "Error.Mutex.Caption", "Не удалось создать Mutex" },
-                { "Error.Mutex.Message", "Произошла ошибка при создании Mutex. Скорее всего, это связано с тем, что при запуске {0} Roblox уже был запущен и успел зарегистрировать свой дескриптор. Вы можете сделать следующее:" },
-                { "Error.Mutex.Action.Fix", "Закрыть дескриптор для всех экземпляров Roblox" },
-                { "Error.Mutex.Action.Abort", "Закрыть все экземпляры Roblox" },
-                { "Error.Mutex.Action.Retry", "Попробовать снова" },
-                { "Error.Mutex.Action.Ignore", "Игнорировать ошибку и продолжить" },
-                { "Error.Mutex.Action.Remember", "Запомнить этот выбор" },
-                { "Error.Mutex.Action.Confirm", "Подтвердить" },
+                { "Error.Mutex.Message", "Произошла ошибка при создании Mutex. Скорее всего, это связано с тем, что при запуске {0} Roblox уже был запущен и успел зарегистрировать свой дескриптор. Попробуйте закрыть Roblox и повторить попытку." },
                 { "Error.Singleton.Caption", "Ошибка одиночного экземпляра" },
                 { "Error.Singleton.Message", "{0} уже запущен. Попробуйте поискать в области уведомлений." }
             };
