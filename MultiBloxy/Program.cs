@@ -276,7 +276,7 @@ namespace MultiBloxy
         // Show error message when the application is already running
         private static void ShowSingletonError()
         {
-            MessageBox.Show(localization.GetTranslation("Error.SingletonError.Message"));
+            MessageBox.Show(localization.GetTranslation("Error.Singleton.Message"));
         }
 
         // Toggle pause/resume state
