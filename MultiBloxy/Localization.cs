@@ -5,19 +5,27 @@ namespace MultiBloxy
 {
     public class Localization
     {
-        private readonly Dictionary<string, Dictionary<string, string>> _translations;
-        private string _currentLocale;
+        public readonly Dictionary<string, Dictionary<string, string>> Locales;
+        public string CurrentLocale;
 
+        // Constructor to initialize the Localization class
         public Localization()
         {
-            _translations = new Dictionary<string, Dictionary<string, string>>();
-            _currentLocale = CultureInfo.CurrentCulture.Name;
-            LoadTranslations();
+            Locales = new Dictionary<string, Dictionary<string, string>>();
+            AutoCurrentLocale();
+            LoadLocales();
         }
 
-        private void LoadTranslations()
+        // Automatically sets the current locale based on the system's culture settings
+        public void AutoCurrentLocale()
         {
-            _translations["en"] = new Dictionary<string, string>
+            CurrentLocale = CultureInfo.CurrentCulture.TwoLetterISOLanguageName;
+        }
+
+        // Loads predefined locales into the Locales dictionary
+        private void LoadLocales()
+        {
+            Locales["en"] = new Dictionary<string, string>
             {
                 { "ContextMenu.StatusMenuItem.Running", "Status: Running" },
                 { "ContextMenu.StatusMenuItem.Paused", "Status: Paused" },
@@ -31,6 +39,8 @@ namespace MultiBloxy
                 { "ContextMenu.SettingsMenuItem.Settings", "Settings" },
                 { "ContextMenu.SettingsMenuItem.PauseOnLaunchMenuItem.PauseOnLaunch", "Pause on Launch" },
                 { "ContextMenu.SettingsMenuItem.ResetRememberedMenuItem.ResetRemembered", "Reset Remembered Options" },
+                { "ContextMenu.SettingsMenuItem.LanguageMenuItem.Language", "Language" },
+                { "ContextMenu.SettingsMenuItem.LanguageMenuItem.AutoDetectMenuItem.AutoDetect", "Auto Detect" },
                 { "ContextMenu.ExitMenuItem.Exit", "Exit" },
                 { "Error.Mutex.Caption", "Failed to Create Mutex" },
                 { "Error.Mutex.Message", "An error occurred while creating the Mutex. This likely happened because when {0} was launched, Roblox was already running and had registered its handle. You can do the following:" },
@@ -44,7 +54,7 @@ namespace MultiBloxy
                 { "Error.Singleton.Message", "{0} is already running. Try looking in the system tray." }
             };
 
-            _translations["ru"] = new Dictionary<string, string>
+            Locales["ru"] = new Dictionary<string, string>
             {
                 { "ContextMenu.StatusMenuItem.Running", "Статус: Работает" },
                 { "ContextMenu.StatusMenuItem.Paused", "Статус: Приостановлено" },
@@ -58,6 +68,8 @@ namespace MultiBloxy
                 { "ContextMenu.SettingsMenuItem.Settings", "Настройки" },
                 { "ContextMenu.SettingsMenuItem.PauseOnLaunchMenuItem.PauseOnLaunch", "Приостановить при запуске" },
                 { "ContextMenu.SettingsMenuItem.ResetRememberedMenuItem.ResetRemembered", "Сбросить запомненные параметры" },
+                { "ContextMenu.SettingsMenuItem.LanguageMenuItem.Language", "Язык" },
+                { "ContextMenu.SettingsMenuItem.LanguageMenuItem.AutoDetectMenuItem.AutoDetect", "Определять автоматически" },
                 { "ContextMenu.ExitMenuItem.Exit", "Выход" },
                 { "Error.Mutex.Caption", "Не удалось создать Mutex" },
                 { "Error.Mutex.Message", "Произошла ошибка при создании Mutex. Скорее всего, это связано с тем, что при запуске {0} Roblox уже был запущен и успел зарегистрировать свой дескриптор. Вы можете сделать следующее:" },
@@ -72,33 +84,29 @@ namespace MultiBloxy
             };
         }
 
-        public string GetTranslation(string key)
+        // Retrieves the localized string for the given key
+        public string GetLocaleString(string key)
         {
-            string locale = GetLocaleWithoutRegion(_currentLocale);
-
-            if (_translations.ContainsKey(locale) && _translations[locale].ContainsKey(key))
+            if (Locales.ContainsKey(CurrentLocale) && Locales[CurrentLocale].ContainsKey(key))
             {
-                return _translations[locale][key];
+                return Locales[CurrentLocale][key];
             }
 
-            // Fallback to English if the translation is not found
-            if (_translations.ContainsKey("en") && _translations["en"].ContainsKey(key))
+            // Fallback to English if the locale string is not found
+            if (Locales.ContainsKey("en") && Locales["en"].ContainsKey(key))
             {
-                return _translations["en"][key];
+                return Locales["en"][key];
             }
 
-            // Fallback to the key if the translation is not found
+            // Fallback to the key if the locale string is not found
             return key;
         }
 
-        private string GetLocaleWithoutRegion(string locale)
+        // Returns a stylized name for the given locale
+        public string GetStylizedLocaleName(string locale)
         {
-            int index = locale.IndexOf('-');
-            if (index != -1)
-            {
-                return locale.Substring(0, index);
-            }
-            return locale;
+            CultureInfo cultureInfo = new CultureInfo(locale);
+            return $"{cultureInfo.DisplayName} ({cultureInfo.NativeName})";
         }
     }
 }

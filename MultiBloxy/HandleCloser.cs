@@ -76,7 +76,7 @@ namespace MultiBloxy
                 while (true)
                 {
                     // Query system information for handles
-                    uint status = NtQuerySystemInformation(SystemHandleInformation, buffer, size, out uint returnLength);
+                    uint status = NtQuerySystemInformation(SystemHandleInformation, buffer, size, out uint _);
 
                     // If the buffer is too small, double its size and retry
                     if (status == 0xC0000004)
@@ -113,9 +113,8 @@ namespace MultiBloxy
                             continue;
                         }
 
-                        IntPtr dupHandle = IntPtr.Zero;
                         // Duplicate the handle to the current process
-                        bool success = DuplicateHandle(processHandle, new IntPtr(handleInfo.Handle), GetCurrentProcess(), out dupHandle, 0, false, DUPLICATE_SAME_ACCESS);
+                        bool success = DuplicateHandle(processHandle, new IntPtr(handleInfo.Handle), GetCurrentProcess(), out IntPtr dupHandle, 0, false, DUPLICATE_SAME_ACCESS);
                         if (!success)
                         {
                             // Close the process handle and move to the next handle if duplication fails
@@ -128,7 +127,7 @@ namespace MultiBloxy
                         IntPtr nameBuffer = Marshal.AllocHGlobal((int)bufferSize);
 
                         // Query the object name information for the duplicated handle
-                        uint status = NtQueryObject(dupHandle, ObjectNameInformation, nameBuffer, bufferSize, out uint returnLength);
+                        uint status = NtQueryObject(dupHandle, ObjectNameInformation, nameBuffer, bufferSize, out uint _);
 
                         if (status != 0)
                         {
@@ -149,7 +148,7 @@ namespace MultiBloxy
                             if (name.Contains("ROBLOX_singletonEvent"))
                             {
                                 // Close the handle if it matches the target name
-                                bool success2 = DuplicateHandle(processHandle, new IntPtr(handleInfo.Handle), IntPtr.Zero, out _, 0, false, DUPLICATE_CLOSE_SOURCE);
+                                DuplicateHandle(processHandle, new IntPtr(handleInfo.Handle), IntPtr.Zero, out _, 0, false, DUPLICATE_CLOSE_SOURCE);
                             }
                         }
 

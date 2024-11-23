@@ -9,11 +9,13 @@ namespace MultiBloxy
         private static readonly string ConfigFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "config.xml");
         private static XDocument configDocument;
 
+        // Static constructor to initialize the config document
         static Config()
         {
             Load();
         }
 
+        // Loads the configuration from the config file
         public static void Load()
         {
             if (File.Exists(ConfigFilePath))
@@ -26,6 +28,7 @@ namespace MultiBloxy
             }
         }
 
+        // Saves the configuration to the config file
         public static void Save()
         {
             if (!configDocument.Root.HasElements)
@@ -41,6 +44,7 @@ namespace MultiBloxy
             }
         }
 
+        // Sets a configuration value for a given key
         public static void Set(string key, object value)
         {
             var element = configDocument.Root.Element(key);
@@ -55,6 +59,7 @@ namespace MultiBloxy
             Save();
         }
 
+        // Gets a configuration value for a given key, with default value
         public static T Get<T>(string key, T defaultValue = default)
         {
             var element = configDocument.Root.Element(key);
@@ -65,6 +70,13 @@ namespace MultiBloxy
             return defaultValue;
         }
 
+        // Checks if a configuration key exists
+        public static bool Has(string key)
+        {
+            return configDocument.Root.Element(key) != null;
+        }
+
+        // Removes a configuration key
         public static void Remove(string key)
         {
             var element = configDocument.Root.Element(key);
