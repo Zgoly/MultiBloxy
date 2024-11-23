@@ -7,10 +7,22 @@
 MultiBloxy is portable, so you can run it right away. However, it's a good idea to add it to the `StartUp` folder so that Windows automatically opens it when you start your PC.
 
 To do that, follow these steps:
-1. Press <kbd>Win</kbd> + <kbd>R</kbd> to open the Run dialog.
-2. Paste this path: `%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\StartUp`
-3. Drag and drop the downloaded `MultiBloxy.exe` file into this folder.
-4. Launch MultiBloxy (or restart your PC).
+1. **Open the Run Dialog**:
+   - Press the <kbd>Win</kbd> key (the Windows key) and the <kbd>R</kbd> key simultaneously. This will open the Run dialog box.
+
+2. **Navigate to the Startup Folder**:
+   - In the Run dialog box, paste the following path: `%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\StartUp`.
+   - Click on `OK` to open the Startup folder.
+
+3. **Add MultiBloxy to the Startup Folder**:
+   - Locate the `MultiBloxy.exe` file that you have downloaded.
+   - Drag and drop the `MultiBloxy.exe` file into the Startup folder that you opened in the previous step.
+
+4. **Launch MultiBloxy**:
+   - You can now launch MultiBloxy by double-clicking the `MultiBloxy.exe` file in the Startup folder.
+   - Alternatively, you can restart your PC to ensure that MultiBloxy starts automatically the next time you log in.
+
+By following these steps, you will ensure that MultiBloxy is set to run automatically whenever you start your computer.
 
 ---
 
@@ -21,14 +33,24 @@ To do that, follow these steps:
 > These instructions assume you have already downloaded, installed, and configured your browser.
 
 #### Google Chrome:
-1. Click on your avatar in the upper right corner (near ⋮).
-2. In the "Profiles" section, click on `Add`.
-3. In the window that opens, select `Continue without an account`.
-4. Enter a name (any name is fine) and click on `Done`.
+1. **Access Profile Settings**:
+   - Click on your avatar in the top right corner of the browser window, near the three vertical dots (⋮).
+
+2. **Add a New Profile**:
+   - In the "Profiles" section that appears, click on the `Add` button.
+
+3. **Set Up the New Profile**:
+   - In the window that opens, select the option `Continue without an account`.
+
+4. **Name the Profile**:
+   - Enter a name for the new profile (you can choose any name you prefer) and click on `Done` to complete the setup.
 
 #### Microsoft Edge:
-1. Click on your avatar in the upper left corner.
-2. Click on `Set up new personal profile`.
+1. **Access Profile Settings**:
+   - Click on your avatar in the upper left corner of the browser window.
+
+2. **Set Up a New Profile**:
+   - Click on `Set up new personal profile` to initiate the creation of a new profile.
 
 Now you have two profiles. In your main profile, you are likely logged into your roblox.com account. Log into your other roblox.com account in the profile you just created.
 
@@ -40,37 +62,59 @@ While MultiBloxy is running, you can launch any experiences by switching between
 
 ### Method №2: Roblox `Switch Accounts` Feature 🔄
 > [!NOTE]
-> With this method, you can add no more than 5 accounts.
+> With this method, you can add up to 5 accounts.
 
-1. Open [roblox.com](https://roblox.com/).
-2. Click on the gear icon ⚙️ in the top right corner.
-3. Click on `Switch Accounts`.
-4. In the modal that opens, click on `Add Account`.
-5. Log in to your second account.
+1. **Open Roblox**:
+   - Navigate to [roblox.com](https://roblox.com/).
 
-Repeat steps 2-4 for each additional account you plan to use.
+2. **Access Account Settings**:
+   - Click on the gear icon ⚙️ located in the top right corner of the page.
+
+3. **Initiate Account Switching**:
+   - In the dropdown menu, click on `Switch Accounts`.
+
+4. **Add a New Account**:
+   - In the modal window that appears, click on `Add Account`.
+
+5. **Log In to the New Account**:
+   - Enter the credentials for your second account and log in.
+
+**Repeat the Process**:
+- To add more accounts, repeat steps 2-4 for each additional account you plan to use, up to a maximum of 5 accounts.
 
 **Done!** 🎉
 
-While MultiBloxy is running, you can launch experiences with your first account, then switch accounts via the gear icon ⚙️ -> `Switch Accounts` and launch experiences with the second account (and so on).
+With MultiBloxy running, you can launch experiences using your first account. To switch to another account, use the gear icon ⚙️ -> `Switch Accounts` and launch experiences with the second account (and so on for additional accounts).
 
 ---
 
 ### Method №3: Roblox App 🎮
-1. Ensure MultiBloxy is open and running (before opening the Roblox app).
-2. Open the Roblox app.
-3. Log out of your Roblox account (if you haven't already).
-4. Now open a new Roblox instance using one of the following methods:
-   * **With Roblox app:**
-      1. Right-click on the Roblox app icon in the taskbar.
-      2. Click on `Roblox Game Client`.
-   * **With MultiBloxy:**
-      1. Go to the system tray.
-      2. Right-click on `MultiBloxy`.
-      3. Click on `Start New Roblox Instance`.
-5. Open as many Roblox instances as you have accounts.
-6. In each Roblox instance, log in to one of your accounts.
+
+1. **Ensure MultiBloxy is Running**:
+   - Make sure MultiBloxy is open and running before you open the Roblox app.
+
+2. **Open the Roblox App**:
+   - Launch the Roblox application on your computer.
+
+3. **Log Out of Your Current Account**:
+   - If you are already logged in, log out of your Roblox account.
+
+4. **Open a New Roblox Instance**:
+   - You can open a new instance of Roblox using one of the following methods:
+     - **Using the Roblox App**:
+       1. Right-click on the Roblox app icon in the taskbar.
+       2. Select `Roblox Game Client` from the context menu.
+     - **Using MultiBloxy**:
+       1. Go to the [system tray](https://learn.microsoft.com/style-guide/a-z-word-list-term-collections/s/system-tray) (located in the bottom right corner of your screen).
+       2. Right-click on the `MultiBloxy` icon.
+       3. Select `Start New Roblox Instance` from the menu.
+
+5. **Open Multiple Roblox Instances**:
+   - Repeat the process to open as many Roblox instances as you have accounts.
+
+6. **Log In to Each Account**:
+   - In each newly opened Roblox instance, log in to one of your accounts.
 
 **Done!** 🎉
 
-While MultiBloxy is running, you can launch any experiences you want by switching Roblox app windows.
+With MultiBloxy running, you can now launch any experiences you want by switching between the different Roblox app windows.
