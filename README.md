@@ -68,20 +68,20 @@ Thank you for using MultiBloxy! 😊
 [shield-repo-license]: https://img.shields.io/github/license/Zgoly/MultiBloxy?style=flat&labelColor=c80064&color=c80064
 [repo-license]: https://github.com/Zgoly/MultiBloxy/blob/main/LICENSE
 
-[shield-repo-releases]: https://img.shields.io/github/downloads/Zgoly/MultiBloxy/total?style=flat&labelColor=c80064&color=c80064
+[shield-repo-releases]: https://img.shields.io/github/downloads/Zgoly/MultiBloxy/total?style=flat&labelColor=007ec6&color=007ec6
 [repo-releases]: https://github.com/Zgoly/MultiBloxy/releases
 
-[shield-repo-latest]: https://img.shields.io/github/v/release/Zgoly/MultiBloxy?style=flat&labelColor=c80064&color=c80064
+[shield-repo-latest]: https://img.shields.io/github/v/release/Zgoly/MultiBloxy?style=flat&labelColor=4c1&color=4c1
 [repo-latest]: https://github.com/Zgoly/MultiBloxy/releases/latest
 
-[shield-repo-stargazers]: https://img.shields.io/github/stars/Zgoly/MultiBloxy?style=flat&labelColor=c80064&color=c80064
+[shield-repo-stargazers]: https://img.shields.io/github/stars/Zgoly/MultiBloxy?style=flat&labelColor=ffd700&color=ffd700
 [repo-stargazers]: https://github.com/Zgoly/MultiBloxy/stargazers
 
-[shield-repo-issues]: https://img.shields.io/github/issues/Zgoly/MultiBloxy?style=flat&labelColor=c80064&color=c80064
+[shield-repo-issues]: https://img.shields.io/github/issues/Zgoly/MultiBloxy?style=flat&labelColor=ff4500&color=ff4500
 [repo-issues]: https://github.com/Zgoly/MultiBloxy/issues
 
-[shield-repo-pulls]: https://img.shields.io/github/issues-pr/Zgoly/MultiBloxy?style=flat&labelColor=c80064&color=c80064
+[shield-repo-pulls]: https://img.shields.io/github/issues-pr/Zgoly/MultiBloxy?style=flat&labelColor=8a2be2&color=8a2be2
 [repo-pulls]: https://github.com/Zgoly/MultiBloxy/pulls
 
-[shield-repo-forks]: https://img.shields.io/github/forks/Zgoly/MultiBloxy?style=flat&labelColor=c80064&color=c80064
+[shield-repo-forks]: https://img.shields.io/github/forks/Zgoly/MultiBloxy?style=flat&labelColor=00008b&color=00008b
 [repo-forks]: https://github.com/Zgoly/MultiBloxy/network/members
