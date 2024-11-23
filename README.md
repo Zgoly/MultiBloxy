@@ -17,14 +17,14 @@ MultiBloxy is a Windows system tray icon application designed to manage and cont
 </a>
 
 ## Key Features 🌟
-- **Single File Executable**: Easy to use with no installation required.
-- **System Tray Integration**: Runs in the background and provides quick access through a system tray icon.
-- **Localization Support**: Supports multiple languages for a better user experience.
-- **Advanced Mutex Control**: Allows you to pause and resume mutex with ease.
-- **Handling Roblox Already Opened**: Shows a dialog box with actions when Roblox is already opened. You can also choose to remember your action for future use.
-- **Low System Resources Usage**: Uses only about 3 MB of RAM and 0% CPU (when running on an average setup).
-- **Customizable Settings**: Allows you to configure couple of settings (config file is saved in the folder along with the .exe file).
-- **Bloxstrap support**: Supports both Bloxstrap and the original bootstrapper.
+- No installation needed with a single file executable.
+- Runs in the background with quick access via a system tray icon.
+- Supports multiple languages.
+- Easily pause and resume mutex with advanced control.
+- Shows actions if Roblox is already open and can remember your choice.
+- Uses about 3 MB of RAM and 0% CPU.
+- Configurable settings saved in the same folder as the .exe file.
+- Works with both Bloxstrap and the original bootstrapper.
 
 ## Getting Started 🚀
 1. Download the `MultiBloxy.exe` from the [latest release](https://github.com/Zgoly/MultiBloxy/releases/latest).
