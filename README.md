@@ -1,12 +1,16 @@
 # MultiBloxy 🎮🔓
 
-<img align="right" width="300" src="https://raw.githubusercontent.com/Zgoly/hosts/main/multibloxy_banner.webp" title="Screenshot of MultiBloxy taken on Windows 11 + Rectify11" />
+<img align="right" src="https://raw.githubusercontent.com/Zgoly/MultiBloxy/refs/heads/main/MultiBloxy/Resources/MultiBloxy.ico" />
 
 MultiBloxy is a Windows system tray icon application designed to manage and control multiple Roblox instances. It provides a convenient way to open multiple instances for different accounts and offers a variety of options to manage them efficiently.
 
-![Total Downloads](https://img.shields.io/github/downloads/Zgoly/MultiBloxy/total?color=%231e90ff)
-![Stars](https://img.shields.io/github/stars/Zgoly/MultiBloxy?color=%231e90ff)
-![Forks](https://img.shields.io/github/forks/Zgoly/MultiBloxy?color=%231e90ff)
+[![License][shield-repo-license]][repo-license]
+[![Downloads][shield-repo-releases]][repo-releases]
+[![Version][shield-repo-latest]][repo-latest]
+[![Stars][shield-repo-stargazers]][repo-stargazers]
+[![Issues][shield-repo-issues]][repo-issues]
+[![Pulls][shield-repo-pulls]][repo-pulls]
+[![Forks][shield-repo-forks]][repo-forks]
 
 <a href="https://dsc.gg/zgoly">
   <img alt="Discord" src="https://invidget.switchblade.xyz/y8fBWPNJFm">
@@ -60,3 +64,24 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ---
 
 Thank you for using MultiBloxy! 😊
+
+[shield-repo-license]: https://img.shields.io/github/license/Zgoly/MultiBloxy?style=flat&labelColor=c80064&color=c80064
+[repo-license]: https://github.com/Zgoly/MultiBloxy/blob/main/LICENSE
+
+[shield-repo-releases]: https://img.shields.io/github/downloads/Zgoly/MultiBloxy/total?style=flat&labelColor=c80064&color=c80064
+[repo-releases]: https://github.com/Zgoly/MultiBloxy/releases
+
+[shield-repo-latest]: https://img.shields.io/github/v/release/Zgoly/MultiBloxy?style=flat&labelColor=c80064&color=c80064
+[repo-latest]: https://github.com/Zgoly/MultiBloxy/releases/latest
+
+[shield-repo-stargazers]: https://img.shields.io/github/stars/Zgoly/MultiBloxy?style=flat&labelColor=c80064&color=c80064
+[repo-stargazers]: https://github.com/Zgoly/MultiBloxy/stargazers
+
+[shield-repo-issues]: https://img.shields.io/github/issues/Zgoly/MultiBloxy?style=flat&labelColor=c80064&color=c80064
+[repo-issues]: https://github.com/Zgoly/MultiBloxy/issues
+
+[shield-repo-pulls]: https://img.shields.io/github/issues-pr/Zgoly/MultiBloxy?style=flat&labelColor=c80064&color=c80064
+[repo-pulls]: https://github.com/Zgoly/MultiBloxy/pulls
+
+[shield-repo-forks]: https://img.shields.io/github/forks/Zgoly/MultiBloxy?style=flat&labelColor=c80064&color=c80064
+[repo-forks]: https://github.com/Zgoly/MultiBloxy/network/members
