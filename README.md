@@ -29,8 +29,8 @@ MultiBloxy is a Windows system tray icon application designed to manage and cont
 ## Getting Started 🚀
 1. Download the `MultiBloxy.exe` from the [latest release](https://github.com/Zgoly/MultiBloxy/releases/latest).
 2. To ensure MultiBloxy starts automatically with Windows, click <kbd>Win</kbd> + <kbd>R</kbd>, run the path `%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\StartUp`, and drop the `MultiBloxy.exe` file here.
-3. Launch `MultiBloxy.exe`, and it will appear in your system tray.
-4. Right-click the system tray icon to access the context menu and manage your Roblox instances.
+3. Launch `MultiBloxy.exe`.
+### For more detailed instructions see [GETTING_STARTED.md](https://github.com/Zgoly/MultiBloxy/blob/main/GETTING_STARTED.md)
 
 ## How It Works ⚙️
 Roblox uses a singleton mutex named `ROBLOX_singletonEvent` to ensure that only one instance of the game is running at a time. MultiBloxy creates this mutex before Roblox does, allowing you to run as many instances of Roblox as you want.
