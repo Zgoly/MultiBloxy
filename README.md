@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> Roblox is actively blocking multi-instance tools - MultiBloxy may not work for you.
+
 # MultiBloxy 🎮🔓
 
 <img align="right" src="https://raw.githubusercontent.com/Zgoly/MultiBloxy/refs/heads/main/MultiBloxy/Resources/MultiBloxy.ico" />
