@@ -118,3 +118,48 @@ With MultiBloxy running, you can launch experiences using your first account. To
 **Done!** 🎉
 
 With MultiBloxy running, you can now launch any experiences you want by switching between the different Roblox app windows.
+
+---
+
+## ⚠️ Fixing Error 773 in Multi-Account Roblox Sessions
+
+Error 773 typically occurs when using multiple Roblox app instances due to session conflicts during login. To apply the fix below, you’ll first need to know how to create additional Roblox instances.
+
+### 🔄 How to Open a New Roblox Instance
+
+You can launch a new Roblox instance in either of the following ways:
+
+- **Using the Roblox App**:  
+  1. Right-click on the Roblox app icon in the **taskbar**.  
+  2. Select **`Roblox Game Client`** from the context menu.
+
+- **Using MultiBloxy**:  
+  1. Go to the **[system tray](https://learn.microsoft.com/style-guide/a-z-word-list-term-collections/s/system-tray )** (located in the bottom-right corner of your screen).  
+  2. Right-click on the **`MultiBloxy`** icon.  
+  3. Choose **`Start New Roblox Instance`** from the menu.
+
+> 💡 Tip: Repeat this process to open as many instances as you have accounts.
+
+### Step-by-Step Fix:
+
+1. **Create All Desired Roblox Instances**:  
+   Open as many Roblox app instances as the number of accounts you intend to use (e.g., 3 accounts → 3 instances).
+
+2. **Log In to Each Account**:  
+   In each instance, manually log in to the respective Roblox account.
+
+3. **Immediately Log Out from All Instances**:  
+   Before doing anything else (e.g., launching a game), go back to the Roblox app home screen in **every instance** and **log out** of all accounts.
+
+4. **Re-Log In with Intended Mapping**:  
+   - In the **first** instance, log back in with your **first** account.  
+   - In the **second** instance, log in with your **second** account.  
+   - Continue this pattern for all instances and accounts.
+
+5. **Avoid Mid-Session Account Switching**:  
+   Do **not** use the Roblox app’s built-in account switcher after this setup - it can reintroduce the conflict.
+
+> [!IMPORTANT]  
+> If you make a mistake during this process (e.g., launch a game before reassigning accounts correctly), **restart your computer** to clear lingering sessions and reduce the risk of error recurrence.
+
+This workaround ensures each Roblox instance maintains a clean, isolated login session - effectively bypassing the root cause of error 773.
