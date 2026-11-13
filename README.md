@@ -1,4 +1,7 @@
 > [!IMPORTANT]
+> This project is archived. Details: https://dsc.gg/zgoly
+
+> [!IMPORTANT]
 > Roblox is actively blocking multi-instance tools - MultiBloxy may not work for you.
 
 # MultiBloxy 🎮🔓
